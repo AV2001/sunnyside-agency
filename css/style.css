@@ -237,3 +237,15 @@ p {
   font-size: 1.6rem;
   font-weight: 600;
 }
+
+/*************************/
+/* IMAGES SECTION */
+/*************************/
+.section-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.section-img {
+  width: 100%;
+}
