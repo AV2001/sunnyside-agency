@@ -13,6 +13,10 @@ body {
   font-size: 1.8rem;
 }
 
+p {
+  font-family: 'Barlow';
+}
+
 /*************************/
 /* HEADER */
 /*************************/
@@ -30,6 +34,7 @@ body {
 
 .main-nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 4.8rem 3.2rem;
 }
@@ -88,4 +93,95 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -40%);
+}
+
+/*************************/
+/* SERVICES SECTION */
+/*************************/
+.section-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.services-content-box {
+  width: 75%;
+}
+
+.service-heading {
+  color: hsl(212, 27%, 19%);
+  font-family: 'Fraunces';
+  font-size: 4.4rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.service-text,
+.service-img-text {
+  color: hsl(213, 9%, 39%);
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.service-cta:link,
+.service-cta:visited {
+  color: hsl(212, 27%, 19%);
+  font-family: 'Fraunces';
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.underline {
+  height: 10px;
+  width: 30%;
+  position: relative;
+  top: -8px;
+  right: 10px;
+  z-index: -1;
+}
+
+.brand-cta-underline {
+  background-color: hsla(51, 100%, 49%, 0.25);
+}
+
+.audience-cta-underline {
+  background-color: hsla(7, 99%, 70%, 0.25);
+}
+
+.service-img {
+  width: 100%;
+}
+
+.service-img-box {
+  position: relative;
+}
+
+.service-img-content {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  text-align: center;
+  width: 57%;
+  transform: translateX(-50%);
+}
+
+.service-img-heading {
+  font-family: 'Fraunces';
+  font-size: 3.6rem;
+  font-weight: 900;
+  margin-bottom: 3.2rem;
+}
+
+.graphic-design-heading,
+.graphic-design-text {
+  color: hsl(167, 40%, 24%);
+}
+
+.photography-heading,
+.photography-text {
+  color: hsl(198, 62%, 26%);
 }
